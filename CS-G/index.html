@@ -5,36 +5,93 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Coursera</title>
-
+  <title>CS-G</title>
+  
+  <!-- manifest -->
+  
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- icons -->
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Custom Styles -->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  
+  <!-- add to homescreeen script and css -->
+  
+   <link rel="stylesheet" href="addtoHomescreen/addtohomescreen.css">
+   <script src="https://kit.fontawesome.com/79f16acf8b.js" crossorigin="anonymous"></script>
+   <script src="addtoHomescreen/addtohomescreen.js"></script>
+  <script>
+    addToHomescreen();
+  </script>
+  
 </head>
 
 <body>
-  <div id="top_bar">
-    <div>
-    <span id="top_bar_left">Coursera Project
-    </span>
-    </div>
-    <div id="icon_bar">
-    <a href="#">
-      <svg class="icn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 7.093v-5.093h-3v2.093l3 3zm4 5.907l-12-12-12 12h3v10h7v-5h4v5h7v-10h3zm-5 8h-3v-5h-8v5h-3v-10.26l7-6.912 7 6.99v10.182z"/></svg>
-    </a>
-    <a href="#">
-      <svg class="icn" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm8.127 19.41c-.282-.401-.772-.654-1.624-.85-3.848-.906-4.097-1.501-4.352-2.059-.259-.565-.19-1.23.205-1.977 1.726-3.257 2.09-6.024 1.027-7.79-.674-1.119-1.875-1.734-3.383-1.734-1.521 0-2.732.626-3.409 1.763-1.066 1.789-.693 4.544 1.049 7.757.402.742.476 1.406.22 1.974-.265.586-.611 1.19-4.365 2.066-.852.196-1.342.449-1.623.848 2.012 2.207 4.91 3.592 8.128 3.592s6.115-1.385 8.127-3.59zm.65-.782c1.395-1.844 2.223-4.14 2.223-6.628 0-6.071-4.929-11-11-11s-11 4.929-11 11c0 2.487.827 4.783 2.222 6.626.409-.452 1.049-.81 2.049-1.041 2.025-.462 3.376-.836 3.678-1.502.122-.272.061-.628-.188-1.087-1.917-3.535-2.282-6.641-1.03-8.745.853-1.431 2.408-2.251 4.269-2.251 1.845 0 3.391.808 4.24 2.218 1.251 2.079.896 5.195-1 8.774-.245.463-.304.821-.179 1.094.305.668 1.644 1.038 3.667 1.499 1 .23 1.64.59 2.049 1.043z"/></svg>
-      </a>
-      <div class="search_box">
-        <input class="search_txt" type="text" name="" placeholder="Search">
-        <a class="search_btn" href="#">
-          <svg class="btn_icn"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066 9.922.749-2.534-2.974-6.993-3.294-9.922-.749z"/>
-          </svg>
+  <nav class="navbar">
+    <ul class="navbar_lst">
+      <li class="back">
+        <a class="back_link" href="#">
+          <i class="fas fa-angle-right"></i>
         </a>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Project -->
+      </li>
+      <li class="navbar_items">
+        <a class="nav_link" target="_blank" href="https://drive.google.com/file/d/1TOFDgRcDpmkaEjiPkz8rHBVwaJeEycUu/view?usp=drivesdk">
+          <i class="fas fa-calendar-alt"></i>
+          <span class="link_text">Class Schedule</span>
+        </a>
+      </li>
+      <li class="navbar_items">
+        <a class="nav_link" target="_blank" href="#">
+          <i id="computer_icon" class="fas fa-desktop"></i>
+          <span class="link_text">Class Links</span>
+        </a>
+      </li>
+      <li class="navbar_items">
+        <a class="nav_link" target="_blank" href="#">
+          <i class="fas fa-user"></i>
+          <span class="link_text">Accsoft</span>
+        </a>
+      </li>
+      <li class="navbar_items">
+        <a class="nav_link" target="_blank" href="#">
+          <i class="fab fa-instagram"></i>
+          <span class="link_text">Instagram</span>
+        </a>
+      </li>
+      <li class="navbar_items">
+        <a class="nav_link" href="#">
+          <i class="fas fa-sun"></i>
+          <span class="link_text">Theme</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <h1>CS-G</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. Curabitur a felis in nunc fringilla tristique.
+    </p>
+  </main>
   <script src="main.js"></script>
 </body>
 </html>
